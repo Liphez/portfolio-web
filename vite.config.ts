@@ -12,17 +12,13 @@ export default defineConfig(({ mode }) => {
     
     return {
       // Adicionado: Define a base URL para o nome do seu repositório
-      base: '/portfolio-web/', 
+      base: './', 
 
       server: {
         port: 3000,
         host: '0.0.0.0',
       },
       plugins: [react()],
-      define: {
-        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
-      },
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),
