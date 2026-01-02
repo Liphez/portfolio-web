@@ -1,15 +1,12 @@
-
 export interface Project {
   id: number;
   title: string;
   description: string;
   tech: string[];
   link: string;
-  imageUrl: string;
-  mobileImageUrl: string;
+  image: string; // Mudamos de imageUrl/mobileImageUrl para apenas 'image'
 }
 
 export interface Skill {
   name: string;
-  icon?: string;
 }

@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
         </p>
         
         <button className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl shadow-blue-900/40 transition-all active:scale-95">
-          Get in Touch
+          Contate-me
         </button>
       </div>
       

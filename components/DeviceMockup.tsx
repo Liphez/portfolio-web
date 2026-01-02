@@ -1,43 +1,28 @@
-
 import React from 'react';
 
 interface DeviceMockupProps {
-  desktopImage: string;
-  mobileImage: string;
+  imageSrc: string;
+  altText: string;
 }
 
-const DeviceMockup: React.FC<DeviceMockupProps> = ({ desktopImage, mobileImage }) => {
+const DeviceMockup: React.FC<DeviceMockupProps> = ({ imageSrc, altText }) => {
   return (
-    <div className="relative w-full aspect-video mb-6 flex justify-center items-end group-hover:scale-[1.02] transition-transform duration-500">
-      {/* Desktop Laptop Frame */}
-      <div className="relative w-[80%] z-0">
-        <div className="bg-slate-800 rounded-t-lg p-1 shadow-xl border-x border-t border-slate-700">
-          <div className="bg-black rounded-sm overflow-hidden aspect-[16/10] relative">
-             <img 
-               src={desktopImage} 
-               alt="Desktop View" 
-               className="w-full h-full object-cover" 
-             />
-             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-          </div>
-        </div>
-        <div className="bg-slate-700 h-2 w-full rounded-b-md relative shadow-lg">
-           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/4 h-0.5 bg-slate-600 rounded-b"></div>
-        </div>
-      </div>
-
-      {/* Mobile Phone Frame */}
-      <div className="absolute -left-2 bottom-2 w-[16%] z-10 shadow-2xl">
-         <div className="bg-slate-900 rounded-[1rem] p-0.5 border-2 border-slate-800 ring-1 ring-slate-700 overflow-hidden aspect-[9/19]">
-            <div className="bg-black w-full h-full rounded-[0.8rem] overflow-hidden relative">
-              <img 
-                src={mobileImage} 
-                alt="Mobile View" 
-                className="w-full h-full object-cover" 
-              />
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-2 bg-black rounded-b-md"></div>
-            </div>
-         </div>
+    <div className="w-full h-auto mb-6 overflow-hidden rounded-xl bg-slate-50 shadow-sm border border-slate-100 group-hover:shadow-md transition-all duration-500">
+      {/* Adicionei 'bg-slate-100' aqui no container interno. 
+          Se a imagem não preencher tudo, o fund será cinza claro em vez de branco.
+      */}
+      <div className="overflow-hidden aspect-video relative bg-slate-100 flex items-center justify-center">
+        <img 
+          src={imageSrc}
+          alt={altText} 
+          // MUDANÇA AQUI: De 'object-cover' para 'object-contain'
+          // Adicionei 'p-2' para dar um respiro se a imagem for muito colada na borda
+          className="w-full h-full object-contain object-center transform scale-[1.25] group-hover:scale-[1.20] transition-transform duration-700 ease-out"
+          loading="lazy"
+        />
+        
+        {/* Brilho suave no hover */}
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300 pointer-events-none" />
       </div>
     </div>
   );
