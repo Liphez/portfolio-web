@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => {
     
     return {
       // Adicionado: Define a base URL para o nome do seu repositório
-      base: './', 
+      base: '/portfolio-web/', 
 
       server: {
         port: 3000,
@@ -22,6 +22,10 @@ export default defineConfig(({ mode }) => {
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),
+        },
+        build: {
+          outDir: 'dist',
+          emptyOutDir: true,
         }
       }
     };

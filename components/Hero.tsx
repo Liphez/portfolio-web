@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
           Phelipe Gonçalves
         </h1>
         <h2 className="text-3xl md:text-5xl font-bold text-blue-500 mb-8">
-          Full-Stack Software Engineer
+          Engenheiro de Software Full-Stack
         </h2>
         
         <p className="text-xl md:text-2xl text-slate-400 max-w-2xl mb-12 leading-relaxed">

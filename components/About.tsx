@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import phelipeFoto from '../assets/phelipeFoto.jpeg'
 const About: React.FC = () => {
   return (
     <section id="about" className="py-24 bg-[#0a0f1d] text-white">
@@ -26,7 +26,7 @@ const About: React.FC = () => {
             <div className="bg-white p-4 pb-12 shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 w-full max-w-sm">
               <div className="bg-slate-200 aspect-square overflow-hidden mb-4">
                 <img 
-                  src="../assets/phelipeFoto.jpeg"
+                  src={phelipeFoto}
                   alt="Phelipe Gonçalves Profile" 
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 />
