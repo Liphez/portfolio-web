@@ -20,9 +20,11 @@ const Hero: React.FC = () => {
           performantes e escaláveis para o mercado global.
         </p>
         
-        <button className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl shadow-blue-900/40 transition-all active:scale-95">
-          Contate-me
-        </button>
+      <a href="mailto:isack.santos@esoftware.uniceplac.edu.br">
+       <button className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl shadow-blue-900/40 transition-all active:scale-95">
+       Contate-me
+       </button>
+      </a>
       </div>
       
       <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">

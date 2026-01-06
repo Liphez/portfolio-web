@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
         />
       </div>
       <div className="flex gap-8 text-white/80 font-medium">
-        <a href="#projects" className="hover:text-white transition-colors">Experience</a>
+        {/*<a href="#projects" className="hover:text-white transition-colors">Experience</a>*/}
         <a href="#projects" className="hover:text-white transition-colors">Projects</a>
         <a href="#about" className="hover:text-white transition-colors">About</a>
       </div>
