@@ -2,34 +2,34 @@ import { Project, Skill } from './types';
 
 // IMPORTAÇÃO DAS IMAGENS (Vite Way)
 // Certifique-se de que as imagens estão na pasta assets
-import ecoDashboardMockup from './assets/Minimalist Website Launch Computer Mockup Instagram Post (1920 x 1080 px).png';
-import cryptoWalletMockup from './assets/mockup2 copy 2.jpeg';
-import pulseSocialMockup from './assets/mockup2.jpeg';
+import oticaTardely from './assets/oticaTardely.png';
+import espacoAmbiente from './assets/20945227.jpg';
+//import pulseSocialMockup from './assets/';
 
 export const PROJECTS: Project[] = [
   {
     id: 1,
-    title: "EcoSphere Dashboard",
-    description: "Uma plataforma completa para monitoramento ambiental em tempo real utilizando sensores IoT e análise preditiva de dados climáticos.",
-    tech: ["React", "TypeScript", "Node.js", "D3.js"],
-    link: "https://example.com/project1",
-    image: ecoDashboardMockup, // Usando a variável importada
+    title: "Otica Tardely",
+    description: "Landing Page estratégica desenvolvida para elevar a presença digital de uma ótica premium. O projeto destaca diferenciais competitivos como Medição Digital e Consultoria de Estilo, transformando visitantes em agendamentos reais via WhatsApp.",
+    tech: ["React", "TypeScript", "Vite", "Tailwind"],
+    link: "https://landing-page-otica-johnne.vercel.app",
+    image: oticaTardely, // Usando a variável importada
   },
   {
     id: 2,
-    title: "CryptoFlow Wallet",
-    description: "Carteira digital de criptoativos focada em segurança e experiência do usuário simplificada para transações instantâneas.",
+    title: "Em desenvolvimento...",
+    description: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
     tech: ["Next.js", "Tailwind CSS", "Web3.js", "Framer Motion"],
     link: "https://example.com/project2",
-    image: cryptoWalletMockup,
+    image: espacoAmbiente,
   },
   {
     id: 3,
-    title: "Pulse Social",
-    description: "Rede social focada em conexões profissionais e compartilhamento de conhecimento técnico com algoritmos de recomendação personalizados.",
+    title: "Em desenvolvimento...",
+    description: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
     tech: ["React Native", "Firebase", "GraphQL", "Redux"],
     link: "https://example.com/project3",
-    image: pulseSocialMockup,
+    image: espacoAmbiente,
   }
 ];
 

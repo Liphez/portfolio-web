@@ -32,7 +32,7 @@ const About: React.FC = () => {
                 />
               </div>
               <p className="font-serif text-slate-800 text-xl text-center italic">
-                Phelipe, 2024
+                Phelipe, 2026
               </p>
             </div>
           </div>

@@ -2,10 +2,26 @@ import React from 'react';
 import DeviceMockup from './DeviceMockup'; 
 import { PROJECTS, SKILLS } from '../constants';
 
+
 const ProjectShowcase: React.FC = () => {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-6">
+    <section id="projects" className="py-24 bg-white">
+      <div className="container mx-auto px-8 max-w-7xl">
+        <div className="flex justify-center mb-16">
+          <button className="border border-blue-600 text-blue-600 px-8 py-3 rounded-full font-bold hover:bg-blue-600 hover:text-white transition-all uppercase tracking-widest text-xs shadow-sm active:scale-95">
+            Download Resume
+          </button>
+        </div>
+
+        <div className="mb-20">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-center text-slate-900 mb-4 tracking-tight">
+            Projetos em Destaque
+          </h2>
+          <p className="text-slate-500 text-center text-lg max-w-2xl mx-auto">
+            Uma seleção de aplicações web e mobile focadas em resolver problemas reais com tecnologias de ponta.
+          </p>
+        </div>
+
         
         {/* Project Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-32">
@@ -25,7 +41,7 @@ const ProjectShowcase: React.FC = () => {
                   {project.title}
                 </h3>
                 {/* ... Restante do código do card (descrição, tags, link) mantém igual ... */}
-                <p className="text-slate-500 mb-6 leading-relaxed line-clamp-3">
+                <p className="text-slate-500 mb-6 leading-relaxed">
                   {project.description}
                 </p>
                 
