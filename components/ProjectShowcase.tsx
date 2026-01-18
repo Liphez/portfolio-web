@@ -9,7 +9,7 @@ const ProjectShowcase: React.FC = () => {
       <div className="container mx-auto px-8 max-w-7xl">
         <div className="flex justify-center mb-16">
           <button className="border border-blue-600 text-blue-600 px-8 py-3 rounded-full font-bold hover:bg-blue-600 hover:text-white transition-all uppercase tracking-widest text-xs shadow-sm active:scale-95">
-            Download Resume
+            Site em desenvolvimento...
           </button>
         </div>
 

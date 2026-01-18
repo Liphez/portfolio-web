@@ -13,10 +13,10 @@ const About: React.FC = () => {
                 Olá, eu sou <span className="text-blue-500 font-bold">Phelipe Gonçalves</span>, um desenvolvedor apaixonado por criar soluções que unem design impecável e código robusto. Minha jornada na tecnologia começou com a curiosidade de entender como as coisas funcionam sob o capô, e hoje transformo essa paixão em produtos escaláveis.
               </p>
               <p>
-              Com experiência em ecossistemas modernos como React e Typescript, foco em entregar performance sem comprometer a usabilidade. Acredito que o código é uma forma de arte funcional, onde cada linha deve ter um propósito claro🧑🏻‍💻☕.
+              Estudando ecossistemas modernos tipados como React.ts e Typescript, foco em entregar performance sem comprometer a usabilidade. Acredito que o código é uma forma de arte funcional, onde cada linha deve ter um propósito claro🧑🏻‍💻☕.
               </p>
               <p>
-               Quando não estou codando, provavelmente estou estudando novas tendências de UI/UX ou explorando o mundo da fotografia digital.
+               Quando não estou codando, provavelmente estou estudando novas tendências de tecnologia ou explorando o mundo da fotografia digital.
               </p>
             </div>
           </div>

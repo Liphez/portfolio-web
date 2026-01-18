@@ -19,7 +19,7 @@ export const PROJECTS: Project[] = [
     id: 2,
     title: "Em desenvolvimento...",
     description: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    tech: ["Next.js", "Tailwind CSS", "Web3.js", "Framer Motion"],
+    tech: ["xxxxx", "xxxxx", "xxxxx", "xxxxx"],
     link: "https://example.com/project2",
     image: espacoAmbiente,
   },
@@ -27,19 +27,19 @@ export const PROJECTS: Project[] = [
     id: 3,
     title: "Em desenvolvimento...",
     description: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    tech: ["React Native", "Firebase", "GraphQL", "Redux"],
+    tech: ["xxxxx", "xxxxx", "xxxxx", "xxxxx"],
     link: "https://example.com/project3",
     image: espacoAmbiente,
   }
 ];
 
 export const SKILLS: Skill[] = [
-  { name: "React" },
+  { name: "HTML" },
+  { name: "Css" },
   { name: "TypeScript" },
-  { name: "Node.js" },
-  { name: "Tailwind CSS" },
-  { name: "PostgreSQL" },
-  { name: "AWS" },
-  { name: "Docker" },
-  { name: "Figma" }
+  { name: "..." },
+  { name: "MySql" },
+  { name: "Word" },
+  { name: "Excel" },
+  { name: "..." }
 ];
